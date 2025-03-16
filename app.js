@@ -10,12 +10,15 @@ function adicionarAmigo() {
     }
 
     amigos.push(nome);
+
     document.getElementById("amigo").value = "";
+
     mostrarListaDeAmigos();
 }
 
 function mostrarListaDeAmigos() {
     let lista = document.getElementById("listaAmigos");
+
     lista.innerHTML = "";
 
     for (let i = 0; i < amigos.length; i++) {
